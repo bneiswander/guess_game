@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>The Guessing Game</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="jumbotron">
+	  		<h1>The Guessing Game</h1>
+	  		<p>You have 5 chances to guess a number between 1 and 100.
+			<br>
+			After each guess I'll tell you if you're close, and high or low.
+			<br>
+			May the odds be ever in your favor!</p>
+	  	</div>
+  		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group">
+					<form>
+					<p id="Guess">Your Guess</p>
+					  	<input type="number" name="guess" min="1" max="100" placeholder="1-100"><br>
+
+						<input class="btn btn-primary"type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+			<div class="col-sm-6" id="guessesLeft">
+				<p>Number of guesses left: 
+				<br>5</p>
+				<button class="btn btn-success" type="button">New Game</button>
+			</div>
+  		</div>
+  	</div>	
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

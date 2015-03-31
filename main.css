@@ -1,0 +1,44 @@
+input {
+	width: 100%;
+	padding: 10px 10px 10px 10px
+}
+
+p {
+	font-size: 20px;
+}
+
+button {
+	width: 100%;
+	display: inline;
+}
+
+#Guess {
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.row {
+	margin-top: 30px; 
+}
+
+#guessesLeft {
+	text-align: center;
+	padding-top: 7px;
+	color: orange;
+}
+
+.jumbotron {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: orange;
+	color: white;
+	text-align: center;
+
+}
+
+h1 {
+	color: orange;
+}
