@@ -21,28 +21,25 @@
   <body>
   	<div class="container">
   		<div class="jumbotron">
-	  		<h1>The Guessing Game</h1>
-	  		<p>You have 5 chances to guess a number between 1 and 100.
-			<br>
-			After each guess I'll tell you if you're close, and high or low.
-			<br>
-			May the odds be ever in your favor!</p>
+	  		<h1 id="feedback">The Guessing Game</h1>
+	  		<p id ="prompt">You have 5 chances to guess a number between 1 and 100.<br>After each guess I'll tell you if you're close, and high or low.<br>May the odds be ever in your favor!</p>
 	  	</div>
   		<div class="row">
-			<div class="col-sm-6">
+			 <div class="col-sm-6">
 				<div class="form-group">
 					<form>
-					<p id="Guess">Your Guess</p>
-					  	<input type="number" name="guess" min="1" max="100" placeholder="1-100"><br>
-
-						<input class="btn btn-primary"type="submit" value="Submit">
+					 <p class="Guess">Your Guess:</p>
+					  	<input id="yourGuess" type="number" name="guess" min="1" max="100" placeholder="1-100">
+              <input id="Submit" class="btn btn-primary"type="submit" value="Submit">
 					</form>
 				</div>
-			</div>
-			<div class="col-sm-6" id="guessesLeft">
-				<p>Number of guesses left: 
-				<br>5</p>
-				<button class="btn btn-success" type="button">New Game</button>
+        <button id="Hint" class="btn btn-info" type="button">Hint</button>
+        <p id="Answer"></p>
+			 </div>
+			 <div class="col-sm-6" id="guessesLeft">
+				<p class="Guess">Guesses Left:</p>
+        <p id="guesses_Left">5</p>
+				<button id="NewGame" class="btn btn-success" type="button">New Game</button>
 			</div>
   		</div>
   	</div>	
@@ -51,6 +48,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.js"></script>
+    <script src="guess.js"></script>
   </body>
 </html>

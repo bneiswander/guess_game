@@ -1,6 +1,7 @@
 input {
 	width: 100%;
-	padding: 10px 10px 10px 10px
+	padding: 10px 10px 10px 10px;
+	font-size: 20px;
 }
 
 p {
@@ -11,23 +12,35 @@ button {
 	width: 100%;
 	display: inline;
 }
-
-#Guess {
+#Hint{
+	width: inherit;
+}
+#yourGuess {
 	text-align: center;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border: 1px solid #c0c0c0;
+}
+.Guess {
+	text-align: left;
 	width: 100%;
 	font-weight: bold;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
+	color: black;
 }
 
 .row {
 	margin-top: 30px; 
 }
 
-#guessesLeft {
+#guesses_Left {
 	text-align: center;
-	padding-top: 7px;
-	color: orange;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border: 1px solid #c0c0c0;
 }
 
 .jumbotron {
@@ -36,9 +49,32 @@ button {
 	background-color: orange;
 	color: white;
 	text-align: center;
-
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+;
 }
 
 h1 {
 	color: orange;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#Answer {
+	display: inline;
+	margin-left: 10px;
+}
+
+.btn-default,.btn-primary,.btn-success,.btn-info,.btn-warning,.btn-danger {
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+    border-radius:0;
+}
+
+.btn-default:active,.btn-primary:active,.btn-success:active,.btn-info:active,.btn-warning:active,.btn-danger:active {
+    margin-top: 3px;
+    margin-bottom: -3px;
 }
